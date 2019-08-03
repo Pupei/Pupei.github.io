@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+/*全体の設定*/
+html {
+    /*文字サイズを10px＝1emにする*/
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    /*    1emの1.4root em*/
+    font-size: 1.4rem;
+    color: #333;
+    /*    文字色がグレー*/
+    background-color: #fff;
+    /*    背景色が白*/
+}
+
+/*画像の隙間を埋めるおまじない*/
+img {
+    vertical-align: bottom;
+}
+
+/*共通の項目*/
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 7.0rem;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: "vdl-logomaru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.0rem;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+h4 {
+    font-family: "vdl-logomaru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.0rem;
+    margin-bottom: 40px;
+
+}
+
+p {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
+
+/*billboard*/
+#billboard {
+    padding: 0;
+    background-image: url(../images/2019_gorgeous_fuchi.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#billboard h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 9.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+}
+
+#billboard p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+
+}
+
+/*explain
+-------------------------------------------------*/
+#explain {
+    background: #00a0e9;
+    /*背景色：#00a0e9*/
+    text-align: center;
+    /*段落設定：中央揃え*/
+}
+
+#explain h2 {
+    color: #ffff33;
+    /*H2タイトルの色：#ffff33*/
+    font-size: 5.0em;
+    line-height: 2.0;
+    width: 1000px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+
+/*introduction
+-------------------------------------------------*/
+#introduction {
+    text-align: center;
+    /*段落設定：中央揃え*/
+}
+
+#introduction h2 {
+    color: #ff9900;
+    /*文字色：#ff9900*/
+    font-family: "tbudrgothic-std", sans-serif;
+    font-weight: 1000;
+    font-size: 7.0rem;
+    margin-top: auto;
+}
+
+
+#introduction ul {
+    width: 1200px;
+    /*横幅：1200px*/
+    margin: 0 auto;
+    /*外余白：上下0、左右auto*/
+    display: flex;
+    /*要素を並べるBOX指定*/
+    flex-direction: row;
+    /*中のアイテムを1行で並べる*/
+    justify-content: space-around;
+    /* 中のアイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く */
+}
+
+#introduction li {
+    flex: 1;
+    /*リスト項目を均等のサイズにする*/
+    list-style: none;
+    /*リストマーカーを無しにする*/
+
+}
+
+#introduction img {
+    margin: 0 30px 30px;
+    /*外余白：上0 左右30px 下30px*/
+}
+
+#introduction h3 {
+    margin-bottom: 20px;
+    /*外余白：下20px*/
+    color: #ff9911;
+    /*文字色：#000*/
+    letter-spacing: 0.2rem;
+    /*文字間隔：0.2文字分*/
+}
+
+#introduction p {
+    margin: 0 30px;
+    /*外余白：上下0 左右30px*/
+    text-align: justify;
+    /*段落設定：両端揃え*/
+    line-height: 1.75;
+    /*行間：1.75*/
+}
+
+/*footer
+-------------------------------------------------*/
+footer {
+    background-color: #002e73;
+    /*背景色：#002e73*/
+    padding-top: 50px;
+    /*内余白：上50px*/
+    padding-bottom: 20px;
+    /*内余白：下20px*/
+    color: #fff;
+    /*文字色：#fff*/
+    text-align: center;
+    /*段落設定：中央揃え*/
+}
+
+footer ul {
+    display: flex;
+    /*要素を並べるBOX指定*/
+    flex-direction: row;
+    /*中のアイテムを1行で並べる*/
+    width: 230px;
+    /*横幅：230px*/
+    margin: 0 auto 60px;
+    /*外余白：上0 左右auto 下60px*/
+}
+
+footer li {
+    flex: 1;
+    /*等幅に割り当てる*/
+    list-style: none;
+    /*リストマーカー：無し*/
+    font-size: 3.2rem;
+    /*文字サイズ：32px*/
+}
+
+footer a {
+    color: #fff;
+    /*文字色：#fff*/
+}
+
+footer p {
+    /*外余白：下30px*/
+}
+
+footer small {
+    color: #ccc;
+    /*文字色：#ccc*/
+    font-size: 1.2rem;
+    /*文字サイズ：12px*/
+}
